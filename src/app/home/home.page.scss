@@ -1,7 +1,24 @@
 ion-content {
+    ion-title {
+        font-size: 32px;
+        font-weight: bold;
+    }
     ion-card {
         ion-img {
             margin-bottom: 15px;
+        }
+        ion-card-title {
+            font-size: 16px;
+        }
+        ion-card-subtitle {
+            font-size: 14px;
+            router-link {
+                display: inline-flex;
+                padding: 3px;
+            }
+        }
+        ion-card-content {
+            font-size: 12px;
         }
     }
 }
