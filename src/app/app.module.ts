@@ -17,15 +17,19 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(),    HttpClientModule, 
-  TranslateModule.forRoot({ 
-    loader: { 
-      provide: TranslateLoader, 
-      useFactory: (createTranslateLoader),  
-      deps: [HttpClient] 
-    } 
-  }),
-AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    HttpClientModule, 
+    TranslateModule.forRoot({ 
+      loader: { 
+        provide: TranslateLoader, 
+        useFactory: (createTranslateLoader),  
+        deps: [HttpClient] 
+      } 
+    }),
+   AppRoutingModule
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
