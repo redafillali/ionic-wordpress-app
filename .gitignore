@@ -30,3 +30,5 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+typings/cordova-typings.d.ts
+typings/cordova-typings.d.ts
